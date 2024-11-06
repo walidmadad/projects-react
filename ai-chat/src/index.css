@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  background-color: #0a2627;
+
+}
+body {
+  margin: 0;
+  height: 100vh; /* Full height for the body */
+  animation: gradientAnimation 10s ease infinite; /* Animation */
+  background: linear-gradient(270deg, #0a2627, #4a9a9b, #0a2627, #4a9a9b);
+  background-size: 400% 400%; /* Adjust background size for smooth animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  animation: fadein 1.5s;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
